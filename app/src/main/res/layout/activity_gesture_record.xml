@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Camera preview (Using TextureView as an example) -->
+    <TextureView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/record_button" />
+
+    <!-- Button for starting/stopping the recording -->
+    <Button
+        android:id="@+id/record_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record"
+        app:layout_constraintTop_toBottomOf="@id/camera_preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/upload_button"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Button for uploading the video -->
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        app:layout_constraintTop_toBottomOf="@id/camera_preview"
+        app:layout_constraintStart_toEndOf="@id/record_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

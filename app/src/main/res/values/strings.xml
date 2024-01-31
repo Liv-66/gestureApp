@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Gesture App</string>
+    <string-array name="gestures_array">
+        <item>Select a gesture</item>
+        <item>Turn on lights</item>
+        <item>Turn off lights</item>
+        <item>Turn on fan</item>
+        <item>Turn off fan</item>
+        <item>Increase fan speed</item>
+        <item>Decrease fan speed</item>
+        <item>Set Thermostat to specified temperature</item>
+        <item>Gesture 0</item>
+        <item>Gesture 1</item>
+        <item>Gesture 2</item>
+        <item>Gesture 3</item>
+        <item>Gesture 4</item>
+        <item>Gesture 5</item>
+        <item>Gesture 6</item>
+        <item>Gesture 7</item>
+        <item>Gesture 8</item>
+        <item>Gesture 9</item>
+    </string-array>
+</resources>
